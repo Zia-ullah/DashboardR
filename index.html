@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>TMain page</title>
+</head>
+<body onload="dd()">
+<div style="height:10vh; border:solid 1px; background-color:khaki; text-align:center;">
+<span><h1>TEST AUTOMATION FRAMEWORK</h1></span>
+<span id="rd" style="float:right;">
+current time
+</span>
+
+</div>
+<p>
+<label>Framework Language</label><br />
+<select name="flang" id="flang">
+<option value="JavaScript">JavaScript</option>
+<option value="TypeScript">TypeScript</option>
+<option value="Java">Java</option>
+<option value="C++">C++</option>
+<option value="C#">#</option>
+<option value="Python">Python</option>
+<option value="Rupy">Rupy</option>
+</select>
+</>
+<script>
+function dd(){
+document.getElementById("rd").innerText=Date();
+}
+</script>
+</body>
+</html>
