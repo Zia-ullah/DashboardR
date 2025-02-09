@@ -4,24 +4,34 @@
 </head>
 <body onload="dd()">
 <div style="height:10vh; border:solid 1px; background-color:khaki; text-align:center;">
-<span><h1>TEST AUTOMATION FRAMEWORK</h1></span>
-<span id="rd" style="float:right;">
-current time
-</span>
-
+	<span><h1>TEST AUTOMATION FRAMEWORK</h1></span>
+	<span id="rd" style="float:right;">current time</span>
 </div>
-<p>
+
 <label>Framework Language</label><br />
 <select name="flang" id="flang">
-<option value="JavaScript">JavaScript</option>
-<option value="TypeScript">TypeScript</option>
-<option value="Java">Java</option>
-<option value="C++">C++</option>
-<option value="C#">#</option>
-<option value="Python">Python</option>
-<option value="Rupy">Rupy</option>
+	<option value="JavaScript">JavaScript</option>
+	<option value="TypeScript">TypeScript</option>
+	<option value="Java">Java</option>
+	<option value="C++">C++</option>
+	<option value="C#">#</option>
+	<option value="Python">Python</option>
+	<option value="Rupy">Rupy</option>
 </select>
-</>
+
+<div float:left;>
+<label>Projects</label><br />
+<select name="proj" id="proj">
+	<option value="HRM">HRMt</option>
+	<option value="Sales">Sales</option>
+	<option value="Oursource">Outsource</option>
+	<option value="QA">QA</option>
+	<option value="ERP">ERP</option>
+	<option value="Tourism">Tourism</option>
+	<option value="Design">Design</option>
+</select>
+</div>
+</body>
 <script>
 function dd(){
 document.getElementById("rd").innerText=Date();
