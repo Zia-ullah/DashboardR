@@ -4,7 +4,7 @@ name: Pull Request
 'on':
   push:
     branches:
-      - main
+      - work
 jobs:
   update-anychange-and-sync-allbranches:
     runs-on: ubuntu-latest
