@@ -1,0 +1,16 @@
+# A pull request workflow
+# Author: Ziaullah Indhad
+name: Pull Request
+'on':
+  push:
+    branches:
+      - main
+      - work
+jobs:
+  update-anychange-and-sync-allbranches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4     
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: work
