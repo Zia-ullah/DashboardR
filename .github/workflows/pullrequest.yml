@@ -5,7 +5,6 @@ name: Pull Request
   push:
     branches:
       - main
-      - work
 jobs:
   update-anychange-and-sync-allbranches:
     runs-on: ubuntu-latest
@@ -13,4 +12,4 @@ jobs:
       - uses: actions/checkout@v4     
       - uses: peter-evans/create-pull-request@v7
         with:
-          branch: work
+          branch: main
